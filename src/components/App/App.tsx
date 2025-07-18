@@ -6,7 +6,7 @@ import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
 import type { Votes, VoteType } from "../../types/votes";
 
-const App = () => {
+export default function App() {
   const [votes, setVotes] = useState<Votes>({
     good: 0,
     neutral: 0,
@@ -48,6 +48,4 @@ const App = () => {
       )}
     </div>
   );
-};
-
-export default App;
+}
